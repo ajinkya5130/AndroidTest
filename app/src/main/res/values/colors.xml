@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 26/8/20 11:05 PM  Ajinkya Kalaskar
+  -->
+
+<resources>
+    <color name="colorPrimary">#0198ac</color>
+    <color name="colorPrimaryDark">#026c99</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorWhite">#FFFFFF</color><!--
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>-->
+</resources>

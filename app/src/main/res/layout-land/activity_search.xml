@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 28/8/20 7:25 PM  Ajinkya Kalaskar
+  -->
+
+<!--
+  ~ Copyright (c) 26/8/20 11:05 PM  Ajinkya Kalaskar
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SearchActivity">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_search"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/gradient_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.miguelcatalan.materialsearchview.MaterialSearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar_search"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar_search"
+            app:layout_constraintStart_toStartOf="@+id/toolbar_search"
+            app:layout_constraintTop_toTopOf="@+id/toolbar_search" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_searched_all_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_search"
+            tools:itemCount="14"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="5"
+            tools:listitem="@layout/custom_layout" />
+
+        <ImageView
+            android:id="@+id/iv_no_result_found"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:contentDescription="@string/image_description"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_search"
+            app:srcCompat="@drawable/no_results_found" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

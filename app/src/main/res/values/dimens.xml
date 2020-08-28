@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 27/8/20 7:03 PM  Ajinkya Kalaskar
+  -->
+
+<resources>
+    <dimen name="_180dp">180dp</dimen>
+    <dimen name="_150dp">150dp</dimen>
+    <dimen name="_10dp">10dp</dimen>
+</resources>

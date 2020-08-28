@@ -1,0 +1,10 @@
+<!--
+  ~ Copyright (c) 26/8/20 11:05 PM  Ajinkya Kalaskar
+  -->
+
+<resources>
+    <string name="app_name">Axxess Coding App</string>
+    <string name="loading">Loading…</string>
+    <string name="image_description">Image Description</string>
+    <string name="search">Search</string>
+</resources>
